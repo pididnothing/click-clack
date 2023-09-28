@@ -20,8 +20,6 @@ body {
     text-align: center;
 }
 
-div#page3 {}
-
 #page1 {
     animation: nextPage 2s;
     animation-delay: 4s;
@@ -46,10 +44,17 @@ div#page3 {}
 #p1t1 {
     background-color: brown;
     height: fit-content;
-    width: fit-content;
     border-radius: 4px;
     padding: 3px;
     text-align: center;
+
+    @media only screen and (min-width: 768px) {
+        width: 500px;
+    }
+
+    @media only screen and (max-width: 768px) {
+        width: fit-content;
+    }
 }
 
 #p2t1 {
